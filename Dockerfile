@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # 2. 安装必要软件包
 RUN apt-get update && apt-get install -y \
     openssh-server supervisor curl wget sudo ca-certificates \
-    tzdata vmin net-tools unzip iputils-ping telnet git iproute2 \
+    tzdata vim net-tools unzip iputils-ping telnet git iproute2 \
     && rm -rf /var/lib/apt/lists/*
 
 # 3. 安装工具 (cloudflared & ttyd)
